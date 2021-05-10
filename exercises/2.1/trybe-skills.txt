@@ -1,6 +1,10 @@
 - Unix
 - Bash
 - Git
-GitHub
-HTML
+-GitHub
+-HTML
 -CSS
+-React
+-GitHub
+-HTML
+-Javascript
