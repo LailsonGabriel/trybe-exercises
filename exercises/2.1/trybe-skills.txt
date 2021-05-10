@@ -1,4 +1,8 @@
 - Unix
 - Bash
 - Git
-React
+-React
+-GitHub
+-HTML
+-Javascript
+
