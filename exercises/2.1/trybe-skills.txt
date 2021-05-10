@@ -1,5 +1,12 @@
 - Unix
 - Bash
 - Git
-React
+-React
 -Flexbox
+-GitHub
+-HTML
+-CSS
+-React
+-GitHub
+-HTML
+-Javascript
