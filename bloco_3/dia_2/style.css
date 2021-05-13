@@ -1,0 +1,48 @@
+h2 {
+    color: green;
+}
+
+body {
+    background-color: rgb(255, 400, 200);
+    font-size: 16px;
+}
+
+#text {
+    background-color:salmon;
+    color: royalblue;
+}
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    text-align: center;
+}
+.back_change_color {
+    background-color: orangered;
+    text-align: center;
+    list-style: none;
+}
+p {
+    font-weight: 600px;
+    font-size: 48px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "courier new";
+}
+
+#yellow {
+    background-color: yellow;
+    
+}
+#red {
+    background-color: red;
+
+}
+
+#brown {
+    background-color: brown;
+}
+
+.list {
+    line-height: 30px;
+}
