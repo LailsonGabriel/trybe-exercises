@@ -1,0 +1,51 @@
+div:hover {
+    border: 5px solid black;
+}
+
+.div1 {
+    background-color: blanchedalmond;
+}
+
+.div1 h3{
+    color: blue;
+    font-style: italic;
+}
+
+.div2 {
+    background-color: darkgreen;
+}
+
+.div2 h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.div3 {
+    background-color: crimson;
+    height: 55px;
+}
+
+.div3 h3 {
+    color: aqua;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.div4 {
+    background-color: darkblue;
+}
+
+.div4 h3 {
+    color: blueviolet;
+}
+
+.div5 {
+    
+    background-color: cadetblue;
+    font-style: italic;
+}
+
+.div5 h3 {
+    color: brown;
+}
+
