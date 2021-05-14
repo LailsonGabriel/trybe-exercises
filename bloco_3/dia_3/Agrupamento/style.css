@@ -1,0 +1,12 @@
+h1, p {
+    text-align: center;
+}
+
+ol:hover {
+    background-color: azure;
+    font-family: ubuntu;
+}
+
+ol, ul {
+    list-style: none;
+}
