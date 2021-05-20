@@ -29,4 +29,4 @@ else if (salarioBase <= 2826.65) {
   descontoliqui = (salarioBase * 0.275) - 869.36;
 }
 
- console.log("Salário: "+ (salarioBase - descontoliqui) )
+ console.log(salarioBase - descontoliqui)
