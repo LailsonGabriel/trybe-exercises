@@ -4,14 +4,20 @@ let simbolo = '*'
 
 
 for(let i = 0; i < n; i += 1) {
-  valorImpresso += simbolo
-
-  for(let i = 0; i < n; i += 1) {
-    console.log(valorImpresso)
-  if(i <= 1) {
-    break;
+  if(i = 1){
+    console.log('    *')
   }
-}
-
-
+  if(i = 2) {
+    console.log('   **')
+  }
+  if(i = 3){
+    console.log('  ***')
+  }
+  if(i = 4) {
+    console.log(' ****')
+  }
+  if(i = 5) {
+    console.log('*****')
+  }
+  break;
 }
