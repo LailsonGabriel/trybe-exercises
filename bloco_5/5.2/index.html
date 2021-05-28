@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function criarDiv() {
+        criar = document.createElement('div');
+        return criar
+      };
+      function criarli() {
+        criar2 = document.createElement('li')
+        return criar2
+      }
+      function criarh3() {
+        criar = document.createElement('h3');
+        return criar
+      };
+
+      var h1 = document.createElement('h1');
+      var div = document.createElement('div');
+      var div2 = document.createElement('div')
+      var p = document.createElement("p");
+      var img = document.createElement('img');
+      var ul = document.createElement('ul');
+      var li = document.createElement('li');
+      var h3 = document.createElement('h3')
+      var body = document.body;
+      body.appendChild(h1).innerText = "Exercício 5.2 - JavaScript DOM"
+      body.appendChild(div).className = "main-content";
+      let paizinho = document.querySelector(".main-content");
+      paizinho.appendChild(div2).className = "center-content"
+      let filhodopaizinho = document.querySelector(".center-content")
+      filhodopaizinho.appendChild(p).innerText = "Algum texto lorem ipsum";
+      paizinho.appendChild(criarDiv()).className = "left-content";
+      paizinho.appendChild(criarDiv()).className = "right-content";
+      let left = document.querySelector(".left-content")
+      left.appendChild(img).className = "small-image";
+      img.src = 'https://picsum.photos/200';
+      let right = document.querySelector(".right-content");
+      right.appendChild(ul)
+      let ulparaaddli = document.getElementsByTagName('ul')[0];
+      ulparaaddli.appendChild(criarli()).innerText = "um", ulparaaddli.appendChild(criarli()).innerText = "dois";
+      ulparaaddli.appendChild(criarli()).innerText = "três", ulparaaddli.appendChild(criarli()).innerText = "quatro", ulparaaddli.appendChild(criarli()).innerText = "cinco", ulparaaddli.appendChild(criarli()).innerText = "seis", ulparaaddli.appendChild(criarli()).innerText = "sete", ulparaaddli.appendChild(criarli()).innerText = "oito", ulparaaddli.appendChild(criarli()).innerText = "nove", ulparaaddli.appendChild(criarli()).innerText = "dez";
+      paizinho.appendChild(criarh3());
+      paizinho.appendChild(criarh3());
+      paizinho.appendChild(criarh3());
+      document.getElementsByTagName("h1")[0].className = "title";
+      document.getElementsByTagName("h3")[0].className = "description", document.getElementsByTagName("h3")[1].className = "description", document.getElementsByTagName("h3")[2].className = "description";
+      left.remove()
+      right.style.marginRight = "auto";
+      filhodopaizinho.style.backgroundColor = "green";
+      let i8 = document.getElementsByTagName("li")[8];
+      let i9 = document.getElementsByTagName("li")[9];
+      i8.remove();
+      i9.remove();
+      
+    </script>
+  </body>
+</html>
