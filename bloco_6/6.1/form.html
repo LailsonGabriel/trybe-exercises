@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="GET">
+    <fieldset>
+      <label for="nome">Digite seu nome:
+        <input type="text" id="nome" name="name" placeholder="seu nome" maxlength="40" required>
+      </label>
+      <br>
+      <br>
+      <label for="email">Digite seu email:
+        <input type="email" id="email" name="email" placeholder="seu email" maxlength="50" required>
+      </label>
+      <br>
+      <br>
+      <label for="cpf">Digite seu cpf:
+        <input type="text" id="cpf" name="cpf" placeholder="seu cpf" max="11" required autocomplete="off">
+      </label>
+      <br>
+      <br>
+      <label for="endereco">Digite seu endereço:
+        <input type="text" id="endereco" name="endereco" placeholder="seu endereço" maxlength="200" required>
+      </label>
+      <br>
+      <br>
+      <label for="cidade">Digite sua Cidade:
+        <input type="text" id="cidade" name="cidade" placeholder="seu endereço" maxlength="28" required>
+      </label>
+      <br>
+      <br>
+      <select name="estado" id="estado" required>
+        <option value="pe">Pernambuco</option>
+        <option value="al">Alagoas</option>
+        <option value="se">Sergipe</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="so">São Paulo</option>
+      </select>
+      <label for="tipo">
+        <input type="radio" name="tipo" value="casa" >Casa
+        <input type="radio" name="tipo" value="ap" >Apartamento
+      </label>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
