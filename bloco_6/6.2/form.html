@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="" method="GET">
+    <div class="container text-center">
+      <h2>Dados Pessoais</h2>
+      <label for="nome">Digite seu nome:
+        <input class="form-control" class="text1" type="text" id="nome" name="name" placeholder="seu nome" maxlength="40" required>
+        <span class="count1"></span>
+      </label>
+      <br>
+      <label for="email">Digite seu email:
+        <input class="form-control" type="email" id="email" name="email" placeholder="seu email" maxlength="50" required>
+      </label>
+      <br>
+      <label for="cpf">Digite seu cpf:
+        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="seu cpf" max="11" required autocomplete="off">
+      </label>
+      <br>
+      <label for="endereco">Digite seu endereço:
+        <input class="form-control" type="text" id="endereco" name="endereco" placeholder="seu endereço" maxlength="200" required>
+      </label>
+      <br>
+      <label for="cidade">Digite sua Cidade:
+        <input class="form-control" type="text" id="cidade" name="cidade" placeholder="seu endereço" maxlength="28" required>
+      </label>
+      <br>
+      <br>
+      <select name="estado" id="estado" required>
+      </select>
+      <label for="tipo">
+        <input class="form-check-input" type="radio" name="tipo" value="casa" >Casa
+        <input class="form-check-input" type="radio" name="tipo" value="ap" >Apartamento
+      </label></div>
+    </fieldset>
+    <br>
+    <div class="container text-center">
+      <legend>Dados do Último emprego</legend>
+      <label for="resumo">Resumo do currículo</label>
+      <br>
+      <textarea class="form-control" name="resumo" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
+      <br>
+      <br>
+      <label for="cargo">Cargo:
+        <br>
+      <input class="form-control-md" type="text" id="cargo" name="cargo" maxlength="40" required>
+      </label>
+      <br>
+      <br>
+      <label for="desc_cargo">Descrição do cargo</label>
+      <input class="form-control" type="text" id="desc_cargo" name="desc_cargo" max="500" required>
+      <br>
+      <label for="date">Data de início</label>
+      <br>
+      <input class="form-control-md" type="text" id="date" name="date" required>
+      <br>
+      <br>
+    <button class="btn btn-danger" id="enviar" type="submit">Enviar</button>
+    <br>
+    <br>
+  </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
