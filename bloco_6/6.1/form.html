@@ -9,6 +9,7 @@
 <body>
   <form action="" method="GET">
     <fieldset>
+      <legend>Dados Pessoais</legend>
       <label for="nome">Digite seu nome:
         <input type="text" id="nome" name="name" placeholder="seu nome" maxlength="40" required>
       </label>
@@ -35,17 +36,32 @@
       <br>
       <br>
       <select name="estado" id="estado" required>
-        <option value="pe">Pernambuco</option>
-        <option value="al">Alagoas</option>
-        <option value="se">Sergipe</option>
-        <option value="rj">Rio de Janeiro</option>
-        <option value="so">São Paulo</option>
       </select>
       <label for="tipo">
         <input type="radio" name="tipo" value="casa" >Casa
         <input type="radio" name="tipo" value="ap" >Apartamento
       </label>
     </fieldset>
+    <br>
+    <fieldset>
+      <legend>Dados do Último emprego</legend>
+      <label for="resumo">Resumo do currículo</label>
+      <br>
+      <textarea name="resumo" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
+      <br>
+      <br>
+      <label for="cargo">Cargo:</label>
+      <input type="text" id="cargo" name="cargo" maxlength="40" required>
+      <br>
+      <br>
+      <label for="desc_cargo">Descrição do cargo</label>
+      <input type="text" id="desc_cargo" name="desc_cargo" max="500" required>
+      <br>
+      <br>
+      <label for="date">Data de início</label>
+      <input type="text" id="date" name="date" required>
+    </fieldset>
+    <button id="enviar" type="submit">Enviar</button>
   </form>
   <script src="script.js"></script>
 </body>
