@@ -15,12 +15,13 @@
   
 </head>
 <body>
+<div class="container text-center">
   <form action="" method="GET" novalidate>
     <fieldset>
       <div class="field">
-        <label>
+        <label class="form-label">
             <span>Nome e sobrenome:</span>
-            <input class="form-control" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="ex. John f. Kennedy" required="required" type="text" />
+            <input class="form-control form-control-sm" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="ex. John f. Kennedy" required="required" type="text" />
         </label>
         <div class='tooltip help'>
             <span>?</span>
@@ -31,38 +32,38 @@
         </div>
       </div>
       <div class="field">
-          <label for="email">
+          <label class="form-label" for="email">
               <span>Email:</span>
-              <input class="form-control" id="email" name="email" required="required" type="email" />
+              <input class="form-control form-control-sm" id="email" name="email" required="required" type="email" placeholder="email@exemplo.com"/>
           </label>
       </div>
       <div class="field">
-        <label for="cpf">
+        <label class="form-label" for="cpf">
           <span>Digite seu CPF:</span>
           <input class="form-control" type="text" id="cpf" name="cpf" placeholder="ex 44543465787" autocomplete="off" required="required" pattern="numeric" data-validate-length-range="11,11">
         </label>
       </div>
       <div class="field">
-        <label for="endereco">
+        <label class="form-label" for="endereco">
           <span>Seu endereço:</span>
           <input class="form-control" type="text" id="endereco" name="endereco" placeholder="Ex Rua Castro Fi..." required="required">
         </label>
       </div>
       <div class="field">
-        <label for="cidade">
+        <label class="form-label" for="cidade">
           <span>Sua Cidade:</span>
           <input class="form-control" type="text" id="cidade" name="cidade" placeholder="seu endereço" required="required">
         </label>
       </div>
       <div class="field">
-        <label for="estado">
+        <label class="form-label" for="estado">
           <span>Estado</span>
         <select name="estado" id="estado" required="required">
         </select>
       </label>
       </div>
       <div class="field">
-        <label for="tipo">
+        <label class="form-label" for="tipo">
           <span>Tipo</span>
           <input class="form-check-input" type="radio" name="tipo" value="casa" required="required">Casa
           <input class="form-check-input" type="radio" name="tipo" value="ap"  required="required">Apartamento
@@ -72,25 +73,25 @@
     <fieldset>
       <legend>Dados do Último emprego</legend>
       <div class="field">
-        <label for="resumo">
+        <label class="form-label" for="resumo">
           <span>Resumo do seu Currículo</span>
           <textarea class="form-control" name="resumo" id="resumo" cols="30" rows="10" required="required" data-validate-length-range="100,1000"></textarea>
         </label>
       </div>
       <div class="field">
-        <label for="cargo">
+        <label class="form-label" for="cargo">
           <span>Cargo:</span>
           <input class="form-control" type="text" id="cargo" name="cargo" maxlength="40" required="required">
         </label>
       </div>
       <div class="field">
-        <label for="desc_cargo">
+        <label class="form-label" for="desc_cargo">
           <span>Descrição do Cargo:</span>
           <input class="form-control" type="text" id="desc_cargo" name="desc_cargo"  required="required">
         </label>
       </div>
       <div class="field">
-        <label for="date">
+        <label class="form-label" for="date">
           <span>Data de início:</span>
           <input class="form-control" type="text" id="datepicker" name="date" required autocomplete="off" required="required">
         </label>
@@ -104,6 +105,7 @@
     <br>
   </div>
   </form>
+</div>
   <script src="node_modules/@yaireo/validator/validator.js"></script>
   <script src="node_modules/pikaday/pikaday.js"></script>
   <script src="script.js"></script>
