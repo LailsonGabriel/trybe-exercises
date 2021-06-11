@@ -41,4 +41,7 @@ document.forms[0].onsubmit = function(e){
 };
 
 
+validator = new FormValidator();
+validator.settings.classes.bad = 'error';
+
 
