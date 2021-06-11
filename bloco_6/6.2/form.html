@@ -71,22 +71,30 @@
     </fieldset>
     <fieldset>
       <legend>Dados do Último emprego</legend>
-      <label for="resumo">Resumo do currículo</label>
-      <br>
-      <textarea class="form-control" name="resumo" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
-      <br>
-      <br>
-      <label for="cargo">Cargo:
-        <br>
-      <input class="form-control-md" type="text" id="cargo" name="cargo" maxlength="40" required>
-      </label>
-      <br>
-      <br>
-      <label for="desc_cargo">Descrição do cargo</label>
-      <input class="form-control" type="text" id="desc_cargo" name="desc_cargo" max="500" required>
-      <br>
-      <label for="date">Data de início</label>
-      <input type="text" id="datepicker" name="date" required autocomplete="off">
+      <div class="field">
+        <label for="resumo">
+          <span>Resumo do seu Currículo</span>
+          <textarea class="form-control" name="resumo" id="resumo" cols="30" rows="10" required="required" data-validate-length-range="100,1000"></textarea>
+        </label>
+      </div>
+      <div class="field">
+        <label for="cargo">
+          <span>Cargo:</span>
+          <input class="form-control" type="text" id="cargo" name="cargo" maxlength="40" required="required">
+        </label>
+      </div>
+      <div class="field">
+        <label for="desc_cargo">
+          <span>Descrição do Cargo:</span>
+          <input class="form-control" type="text" id="desc_cargo" name="desc_cargo"  required="required">
+        </label>
+      </div>
+      <div class="field">
+        <label for="date">
+          <span>Data de início:</span>
+          <input class="form-control" type="text" id="datepicker" name="date" required autocomplete="off" required="required">
+        </label>
+      </div>
     </fieldset>
       <br>
       <br>
