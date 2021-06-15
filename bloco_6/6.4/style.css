@@ -6,7 +6,23 @@
 }
 
 body {
-  background-color: rgb(247, 247, 247);
+  background: linear-gradient(45deg, #2d3436, #00b894, #636e72,  #b2bec3);
+  background-size: 300% 300%;
+  animation: colors 5s ease infinite;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .header-container {
@@ -111,4 +127,10 @@ body {
   color: white;
   text-shadow: 2px 2px black;
   position: relative;
+}
+
+section h2 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
 }
