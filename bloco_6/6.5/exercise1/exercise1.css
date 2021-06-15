@@ -1,0 +1,61 @@
+body {
+    font-size: 20px;
+}
+h1 {
+    font-size: 20px;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+figure {
+    margin: 10px auto;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: tomato;
+        font-size: 25px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    img {
+        margin: 10px auto;
+        max-width: 100%;
+    }
+    .gatos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 950px;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    body {
+        background-color: ghostwhite;
+        font-size: 30px;
+    }
+
+    * {
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .gatos {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+
+}
