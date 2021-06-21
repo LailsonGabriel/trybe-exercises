@@ -16,7 +16,6 @@ const maiorPalavra = (palavra) => {
   let maior = 0;
   let maiorPalavra = null;
   arrString.forEach(function(str) {
-    console.log(str)
     if (maior < str.length) {
       maior = str.length;
       maiorPalavra = str;
@@ -28,5 +27,5 @@ const maiorPalavra = (palavra) => {
 
 
 
-console.log(maiorPalavra('teu cu é bem lixo seu arrombado'));
+console.log(maiorPalavra('Todos nós conseguimos conquistar conhecimento'));
 
