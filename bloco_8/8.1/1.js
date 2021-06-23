@@ -11,7 +11,8 @@ const newEmployees = (chamar) => {
   const employess = {
     id1: chamar('Lailson Gabriel Vieira'),
     id2: chamar('Pedro Bezerra Nascimento'),
-    id3: chamar('Jacinto Pinto')
+    id3: chamar('Jacinto Pinto'),
+    id4: 'Sei lá'
   }
   return employess
 }
