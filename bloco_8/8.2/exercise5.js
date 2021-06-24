@@ -64,22 +64,15 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-//console.log(books[0].name.length)
 
-function smallerName() {
-  let nameBook;
-  let comparar = books[0].name.length;
-  // escreva aqui o seu código
-  books.forEach((bookName) => {
-    if(bookName.name.length < comparar) {
-      comparar = bookName.name.length;
-      nameBook = bookName.name;
-    }
+const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  // escreva seu código aqui
+  return books.every((valor) => {
+    if(valor.author.birthYear > 1901 && valor.author.birthYear <= 2000) return true;
+    return valor.author.birthYear === false
   })
-  // Variável nameBook que receberá o valor do menor nome;
-  return nameBook;
 }
 
-console.log(smallerName())
-
-//assert.strictEqual(smallerName(), 'Duna');
+assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
