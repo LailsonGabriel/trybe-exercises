@@ -80,7 +80,7 @@ function longestNamedBook() {
     if(crr.name.length > acc.name.length)  {
       return crr;
     } 
-    return acc
+    return acc;
   });
 }
 assert.deepStrictEqual(longestNamedBook(), expectedResult);
