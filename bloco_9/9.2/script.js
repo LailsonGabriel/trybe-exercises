@@ -12,9 +12,8 @@ const randomNumbers = (numberCounter) => {
 
 const numbers = new Promise((resolve, reject) => {
   const number = randomNumbers(10);
-  console.log(number)
-  if(number < 8000) resolve();
+  if(number < 8000) resolve([number / 2, number / 3, number /  5, number / 10]);
   reject();
 })
-.then(result => console.log('Promise resolvida'))
-.catch(erro => console.log('Promise rejeitada'))
+.then(result => console.log(result))
+.catch(erro => console.log('É MAIS DE OITO MILLL'))
