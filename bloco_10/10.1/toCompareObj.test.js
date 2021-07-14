@@ -1,3 +1,5 @@
+const { encode } = require("./part2/first");
+
 const obj1 = {
   title: 'My Title',
   description: 'My Description',
@@ -12,7 +14,7 @@ const obj3 = {
   title: 'My Different Title',
   description: 'My Description',
 };
-
+console.log(encode('aeiou'))
 
 test('obj1 not equal obj2', () => {
   expect(Object.entries(obj1)).not.toEqual(Object.entries(obj2));
