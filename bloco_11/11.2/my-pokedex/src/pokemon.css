@@ -1,0 +1,20 @@
+.PokeDex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pokemon {
+  width: 30%;
+  background-color: #dfe6e9;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow:#b2bec3 2px 2px 2px 2px;
+  transition: 0.3s;
+}
+
+.pokemon:hover {
+  transform: translateY(-10px);
+  
+}
