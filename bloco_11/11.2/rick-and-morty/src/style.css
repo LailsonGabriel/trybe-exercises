@@ -1,0 +1,21 @@
+.Pai {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.person img {
+  width: 250px;
+  border-radius: 100%;
+}
+
+.person {
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  box-shadow: darkgray 2px 2px 2px;
+}
