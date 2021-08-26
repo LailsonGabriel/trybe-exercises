@@ -69,7 +69,7 @@ aumentar.addEventListener("click", AumentarTamanhoDaFonte);
 //Estilo da fonte
 
 function tipoDeFonte() {
-  texto.style.fontFamily = "ubuntu";
+  texto.target.style.fontFamily = "ubuntu";
 }
 
 fonte.addEventListener("click", tipoDeFonte)
@@ -77,12 +77,9 @@ fonte.addEventListener("click", tipoDeFonte)
 
 
 
-let StyleFont = document.querySelector("#texto").style.fontFamily;
-let fontparadata = StyleFont;
+let styleFont = document.querySelector("#texto").style.fontFamily;
 
-console.log(fontparadata)
-
-localStorage.setItem('FonteDoTexto', fontparadata);
+localStorage.setItem('FonteDoTexto', styleFont.target);
 
 
 

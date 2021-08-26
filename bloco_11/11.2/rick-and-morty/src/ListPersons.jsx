@@ -4,7 +4,7 @@ import './style.css'
 
 class ListPersons extends React.Component {
   render () {
-    const { name, image, infos } = this.props;
+    const { people: { name, image, infos } } = this.props;
     return (
       <div className='person'>
         <img src={image} alt={name} />
@@ -17,11 +17,13 @@ class ListPersons extends React.Component {
 }
 
 ListPersons.propTypes = {
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  infos: PropTypes.shape({
-    species: PropTypes.string.isRequired,
-    status: PropTypes.string.isRequired
+  people: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    infos: PropTypes.shape({
+      species: PropTypes.string,
+      status: PropTypes.string,
+    })
   })
 }
 

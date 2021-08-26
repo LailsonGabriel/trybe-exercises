@@ -1,12 +1,12 @@
 function consultaNomes(nomes) {
-  let maiorNome;
+  let maiorNome = nomes[0];
   for(let index in nomes) {
-    if (nomes[index] > nomes[index + 1]) {
-      maiorNome = nomes[index]
-    }
+      if(maiorNome.length < nomes[index].length ) {
+        maiorNome = nomes[index]
+      }
     
   }
   return maiorNome;
 } 
 
-console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana', 'Lailson']))
+console.log(consultaNomes(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
