@@ -1,18 +1,16 @@
 import React from 'react';
-import people from './data';
 import ListPersons from './ListPersons';
 
 
 class RenderPersons extends React.Component {
   render () {
+    const { people } = this.props;
     return (
       <div className='Pai'>
-        {people.map(({id, name, image, infos}) => (
+        {people.map((people) => (
           <ListPersons
-          key={id}
-          name={name}
-          image={image}
-          infos={infos}
+          key={ people.id}
+          people={people}
           />
         ))}
       </div>

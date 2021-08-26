@@ -1,9 +1,15 @@
 import './App.css';
 import RenderPersons from './RenderPersons';
+import people from './data'
+import OrderTwo from './OrderTwo';
+import Prices from './Prices';
 
 function App() {
   return (
-    <RenderPersons />
+    <div>
+      <RenderPersons people={ people } />
+      <OrderTwo prices={ Prices }/>
+    </div>
   );
 }
 

@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-page {
+  font-family: "Ubuntu";
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-direction: column;
+  width: 1000px;
+}

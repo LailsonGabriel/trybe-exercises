@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import OrderTwo from './OrderTwo';
 
 ReactDOM.render(
   <React.StrictMode>
