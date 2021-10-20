@@ -1,0 +1,1 @@
+SELECT employee_id, FIRST_NAME, YEAR(HIRE_DATE) FROM hr.employees;
