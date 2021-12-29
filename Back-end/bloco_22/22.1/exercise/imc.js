@@ -14,7 +14,7 @@ const calcularIMC = (weight, height) => {
   if (resultIMC > 40) return console.log('Obesidade graus III e IV');
 };
 
-const weight = readline.questionFloat('Whats your weight?');
-const height = readline.questionFloat('Whats your height?');
+const weight = readline.questionFloat('Whats your weight??');
+const height = readline.questionFloat('Whats your height??');
 
 calcularIMC(weight, height);
