@@ -13,14 +13,20 @@ app.use("/user", userRoutes);
 const bitCointRoute = require("./routes/bitCoinRoute");
 app.use("/btc", bitCointRoute);
 
-//Rota(GET) pega o id
+//Rotas(GET) pega o id
 const postRoutes = require("./routes/postRoutes");
 app.use("/post", postRoutes);
 
+//Rotas(GET e Post) TeamsRoutes
+const teamsRoutes = require("./routes/teamsRoutes");
+app.use("/teams", teamsRoutes);
+
+//Caso uma rota passada seja indefinida
 app.get("*", (req, res) => {
   return res.status(404).json({ message: "Opsss, route not found!" });
 });
 
+// Vai lidar com todos os erros
 app.use(errorMiddleware);
 
 app.listen(8080, () => {
