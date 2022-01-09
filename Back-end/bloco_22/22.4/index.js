@@ -2,8 +2,11 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const { getSimpsons, setSimpsons } = require("./fs.utils");
+const authToken = require("./auth-token");
+const generateToken = require("./randomToken");
 
 app.use(bodyParser.json());
+app.use(authToken);
 
 app.get("/", (req, res) => {
   res.send("First");
@@ -51,6 +54,16 @@ app.post("/simpsons", async (req, res) => {
   simpsons.push({ id: String(id), name });
   setSimpsons(simpsons);
   res.status(204).end();
+});
+
+app.post("/signup", (req, res) => {
+  const { email, password, firstName, phone } = req.body;
+  const user = [email, password, firstName, phone];
+  user.forEach((field) => {
+    if (field === undefined || field === "")
+      return res.status(401).json({ message: "completed all fields" });
+  });
+  res.status(200).json({ token: generateToken() });
 });
 
 app.listen(5050, () => {
