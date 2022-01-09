@@ -17,6 +17,10 @@ app.use("/btc", bitCointRoute);
 const postRoutes = require("./routes/postRoutes");
 app.use("/post", postRoutes);
 
+app.get("*", (req, res) => {
+  return res.status(404).json({ message: "Opsss, route not found!" });
+});
+
 app.use(errorMiddleware);
 
 app.listen(8080, () => {
