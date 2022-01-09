@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const errorMiddleware = require("./errorMiddleware");
 const app = express();
 
 app.use(bodyParser.json());
@@ -11,6 +12,12 @@ app.use("/user", userRoutes);
 //Rota(GET) para consultar preço do bitcoin
 const bitCointRoute = require("./routes/bitCoinRoute");
 app.use("/btc", bitCointRoute);
+
+//Rota(GET) pega o id
+const postRoutes = require("./routes/postRoutes");
+app.use("/post", postRoutes);
+
+app.use(errorMiddleware);
 
 app.listen(8080, () => {
   console.log("Aplicação Iniciada");
