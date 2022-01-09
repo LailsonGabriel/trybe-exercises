@@ -10,5 +10,6 @@
   { "id": "9", "name": "Krusty" },
   { "id": "10", "name": "Milhouse Van Houten" },
   { "id": "90", "name": "Lailson Gabriel" },
-  { "id": "55", "name": "Lailson Gabriel" }
+  { "id": "55", "name": "Lailson Gabriel" },
+  { "id": "undefined" }
 ]
