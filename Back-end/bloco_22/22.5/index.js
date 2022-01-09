@@ -1,13 +1,12 @@
 const express = require("express");
-const validateUser = require("./validateNewUser");
 const bodyParser = require("body-parser");
 const app = express();
 
 app.use(bodyParser.json());
 
-app.post("/user/register", validateUser, (req, res) => {
-  res.status(201).json({ message: "user created" });
-});
+// Rotas de Registro e Login
+const userRoutes = require("./routes/userRoutes");
+app.use("/user", userRoutes);
 
 app.listen(8080, () => {
   console.log("Aplicação Iniciada");
