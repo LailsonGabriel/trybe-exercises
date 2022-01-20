@@ -1,4 +1,5 @@
 const connection = require("./connection");
+const axios = require("axios");
 
 const getCep = async (cep) => {
   const [cepResult] = await connection.execute(
@@ -6,9 +7,30 @@ const getCep = async (cep) => {
     [cep]
   );
 
-  if (cepResult.length === 0) return null;
+  if (cepResult.length === 0) {
+    const searchCEPinAPI = await getNewCepAPI(cep);
+    if (!searchCEPinAPI) return null;
+    const newAdress = {
+      cep: searchCEPinAPI.cep.split("-").join(""),
+      logradouro: searchCEPinAPI.logradouro,
+      bairro: searchCEPinAPI.bairro.split(" ")[1],
+      localidade: searchCEPinAPI.localidade,
+      uf: searchCEPinAPI.uf,
+    };
+    console.log(newAdress);
+    await createNewAdress(newAdress);
+    return newAdress;
+  }
 
   return cepResult;
+};
+
+const getNewCepAPI = async (cep) => {
+  const response = axios
+    .get(`https://viacep.com.br/ws/${cep}/json/`)
+    .then((res) => res.data);
+
+  return response;
 };
 
 const createNewAdress = async ({ cep, logradouro, bairro, localidade, uf }) => {
