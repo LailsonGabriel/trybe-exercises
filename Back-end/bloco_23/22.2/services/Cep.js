@@ -15,12 +15,6 @@ const getCep = async (cep) => {
   return resultCep;
 };
 
-const formatCEP = (cep) => {
-  const regexCEP = /\d{5}-\d{3}/;
-  if (regexCEP.test(cep)) return cep;
-  return cep.replace(/(\d{5})(\d{3})/, "$1-$2");
-};
-
 const getNewCEP = (cep, logradouro, bairro, localidade, uf) => ({
   cep: cep.split("-").join(""),
   logradouro,
